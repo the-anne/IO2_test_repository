@@ -21,5 +21,16 @@ namespace PWMiNI.TddWorkshop.CalculatorLibraryTests
         {
             Assert.Equal(expected, stringCalculator.Add(input));
         }
+
+        [Theory]
+        [InlineData("2,3", 5)]
+        [InlineData("5,0", 5)]
+        [InlineData("-10,7", -3)]
+        [InlineData("-2,4", 2)]
+        [InlineData("-2,2", 0)]
+        public void Test_WhenTwoNumbersProvidedItShouldReturnTheSum(string input, int expected)
+        {
+            Assert.Equal(expected, stringCalculator.Add(input));
+        }
     }
 }
