@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWMiNI.TddWorkshop.CalculatorLibrary", "src\PWMiNI.TddWorkshop.CalculatorLibrary\PWMiNI.TddWorkshop.CalculatorLibrary.csproj", "{B7764569-2957-4821-B10E-B77A4C424CE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWMiNI.TddWorkshop.CalculatorLibraryTests", "tests\PWMiNI.TddWorkshop.CalculatorLibraryTests\PWMiNI.TddWorkshop.CalculatorLibraryTests.csproj", "{F3BAF446-73B9-492D-A67C-C5B8710B0002}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7764569-2957-4821-B10E-B77A4C424CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7764569-2957-4821-B10E-B77A4C424CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7764569-2957-4821-B10E-B77A4C424CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7764569-2957-4821-B10E-B77A4C424CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BAF446-73B9-492D-A67C-C5B8710B0002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BAF446-73B9-492D-A67C-C5B8710B0002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BAF446-73B9-492D-A67C-C5B8710B0002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BAF446-73B9-492D-A67C-C5B8710B0002}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
