@@ -18,7 +18,12 @@ namespace PWMiNI.TddWorkshop.CalculatorLibrary
 
             foreach(string s in res)
             {
-                sum += Int32.Parse(s);
+                int x = Int32.Parse(s);
+                if(x<0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                sum += x;
             }
 
             return sum;
