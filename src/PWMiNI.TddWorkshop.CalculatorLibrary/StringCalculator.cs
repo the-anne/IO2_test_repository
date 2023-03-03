@@ -14,11 +14,14 @@ namespace PWMiNI.TddWorkshop.CalculatorLibrary
             { return 0; }
 
             string[] res = numbers.Split(',', '\n');
+            int sum = 0;
 
-            int a = Int32.Parse(res[0]);
-            int b = res.Length>1 ? Int32.Parse(res[1]) : 0;
+            foreach(string s in res)
+            {
+                sum += Int32.Parse(s);
+            }
 
-            return a + b;
+            return sum;
         }
     }
 }

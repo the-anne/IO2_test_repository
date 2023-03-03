@@ -43,5 +43,15 @@ namespace PWMiNI.TddWorkshop.CalculatorLibraryTests
         {
             Assert.Equal(expected, stringCalculator.Add(input));
         }
+
+        [Theory]
+        [InlineData("1\n2,3", 6)]
+        [InlineData("5\n0\n-2", 3)]
+        [InlineData("-10,7,1", -2)]
+        [InlineData("-2,4\n11", 13)]
+        public void Test_WhenThreeNumbersSomehowSeparatedProvidedItShouldReturnTheSum(string input, int expected)
+        {
+            Assert.Equal(expected, stringCalculator.Add(input));
+        }
     }
 }
