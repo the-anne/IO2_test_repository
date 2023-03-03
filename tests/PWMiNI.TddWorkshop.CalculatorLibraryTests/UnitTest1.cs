@@ -28,7 +28,18 @@ namespace PWMiNI.TddWorkshop.CalculatorLibraryTests
         [InlineData("-10,7", -3)]
         [InlineData("-2,4", 2)]
         [InlineData("-2,2", 0)]
-        public void Test_WhenTwoNumbersProvidedItShouldReturnTheSum(string input, int expected)
+        public void Test_WhenTwoNumbersCommaSeparatedProvidedItShouldReturnTheSum(string input, int expected)
+        {
+            Assert.Equal(expected, stringCalculator.Add(input));
+        }
+
+        [Theory]
+        [InlineData("2\n3", 5)]
+        [InlineData("5\n0", 5)]
+        [InlineData("-10\n7", -3)]
+        [InlineData("-2\n4", 2)]
+        [InlineData("-2\n2", 0)]
+        public void Test_WhenTwoNumbersNewlineSeparatedProvidedItShouldReturnTheSum(string input, int expected)
         {
             Assert.Equal(expected, stringCalculator.Add(input));
         }
